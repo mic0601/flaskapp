@@ -6,7 +6,7 @@ from app.helper.local import getLocal
 @web.route('/index/')
 def index():
     Local=getLocal()
-    return 'SakuraGaara: %s | %s | %s' % (Local.getcurrenttime(),
+    return 'SakuraGaara for flaskapp: %s | %s | %s' % (Local.getcurrenttime(),
                              Local.gethostname(),
                              Local.getlocaladdress())
 
