@@ -9,7 +9,6 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
     
 RUN pip install flask
 
-RUN wget https://github.com/cookieY/Yearning/releases/download/v2.1.7/Yearning-2.1.7.linux-amd64.zip
 
 RUN mkdir /flask
 COPY app /flask/app
